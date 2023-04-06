@@ -1,10 +1,12 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { VitePWA } from 'vite-plugin-pwa'
+import type { ConfigEnv } from 'vite'
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  base: '/vue3-vite',
+export default defineConfig(({ command, mode }: ConfigEnv) =>{
+  return {
+    base: '/vue3-vite',
   plugins: [
     vue(),
     // https://vite-pwa-org.netlify.app/guide/
@@ -33,4 +35,15 @@ export default defineConfig({
       },
     }),
   ],
+  // https://github.com/antfu/vite-ssg
+  ssgOptions: {
+    script: 'async',
+    formatting: 'minify',
+    crittersOptions: {
+      reduceInlineStyles: false,
+    },
+    // onFinished() { generateSitemap() },
+  },
+  }
+  
 })
