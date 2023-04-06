@@ -9,7 +9,7 @@ const count = ref(0)
 
 <template>
   <div>
-  <h1>关于我们</h1>
+  <h1>关 于 我 们</h1>
   </div>
 </template>
 
