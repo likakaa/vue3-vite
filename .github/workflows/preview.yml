@@ -23,7 +23,7 @@ jobs:
       - name: Setup config ⚙️
         shell: bash
         run: |
-          sed -i  's#VITE_PUBLIC_PATH\s*=.*#VITE_PUBLIC_PATH = /Vue3 Vite/#g' ./.env.production
+          sed -i  's#VITE_PUBLIC_PATH\s*=.*#VITE_PUBLIC_PATH = /vue3-vite/#g' ./.env.production
           cat ./.env.production
       - name: Install and Build 🔧
         run: |
@@ -31,7 +31,7 @@ jobs:
           pnpm i
           pnpm run build
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        uses: peaceiris/actions-gh-pages@v3
         with:
-            branch: gh-pages
-            folder: dist
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
