@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) navigator.serviceWorker.register('/vue3-vite/dev-sw.js?dev-sw', { scope: '/vue3-vite/', type: 'classic' })
