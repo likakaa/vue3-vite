@@ -12,7 +12,6 @@ import About from "./views/About.vue";
 // app.mount('#app')
 
 const routes: RouteRecordRaw[] = [
-  // 定义路由
   {
     path: "/",
     name: "Home",
@@ -36,7 +35,7 @@ export const createApp = ViteSSG(
       next();
     });
     if (isClient) {
-      // 客户端
+      
     }
   }
 );

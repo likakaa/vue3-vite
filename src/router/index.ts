@@ -3,9 +3,8 @@ import Home from '../views/Home.vue';
 import About from '../views/About.vue';
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHashHistory(import.meta.env.VITE_PUBLIC_PATH),
   routes: [
-    // 定义路由
     {
         path: '/',
         name: 'Home',
