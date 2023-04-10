@@ -79,7 +79,7 @@ define(['./workbox-8d98849f'], (function (workbox) { 'use strict';
    */
   workbox.precacheAndRoute([{
     "url": "about.html",
-    "revision": "654c9b1bf3e3241ed2abffc4df8021ca"
+    "revision": "06b194622a25111d1f1134cf37b23532"
   }, {
     "url": "assets/app-85973e65.js",
     "revision": null
@@ -88,7 +88,7 @@ define(['./workbox-8d98849f'], (function (workbox) { 'use strict';
     "revision": null
   }, {
     "url": "index.html",
-    "revision": "877815431c5bebbe36cadbd838dc6f63"
+    "revision": "321cb228b41c33866f0ef834ef7f4baf"
   }, {
     "url": "registerSW.js",
     "revision": "ef19bab1991f4177b7275a944c7512e4"
