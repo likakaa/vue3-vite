@@ -6,7 +6,7 @@ import type { ConfigEnv } from "vite";
 // https://vitejs.dev/config/
 export default defineConfig(({ command, mode }: ConfigEnv) => {
   return {
-    base: "/",
+    base: "/vue3-vite",
     plugins: [
       vue(),
       // https://vite-pwa-org.netlify.app/guide/
